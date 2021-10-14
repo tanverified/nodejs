@@ -10,6 +10,10 @@ const genres = [
   { id: 3, name: 'Romance' },  
 ];
 
+app.get('/', (req, res) => {
+  res.send("Genres API - Server is Live");
+});
+
 app.get('/api/genres', (req, res) => {
   res.send(genres);
 });
