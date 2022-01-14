@@ -7,8 +7,7 @@ app.use(express.json());
 const courses = [
   { id: 1, name: "Html,Css & JavaScript" },
   { id: 2, name: "React & Next.js" },
-  { id: 3, name: "Node & Express" },
-  { id: 4, name: "Python & Django" },
+  { id: 3, name: "Node & Express" }
 ];
 
 app.get("/", (req, res) => {
@@ -71,5 +70,5 @@ app.delete("/api/courses/:id", (req, res) => {
 
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
